@@ -1,0 +1,41 @@
+<!-- <img class="main-cover" src="{{prodDetails.images_url[0]}}" alt=""> -->
+
+<div class="container my-5" >
+    <h1>{{prodDetails.title}}</h1>
+
+    <div class="row">
+        <div class="col-12 col-lg-9 pe-lg-5">
+           <p> 
+            {{prodDetails.description}}
+           </p>
+            <!-- <img width="100%" src="{{prodDetails.images_url}}" alt=""> -->
+            <div class="row mt-5">
+                <div *ngFor="let image of prodDetails.images_url.slice(1)" class="col-md-4 col-6 my-1 ">
+                    <img class="imageInSideProudect" height="150px" width="100%" src="{{image}}" alt="">
+                </div>
+           </div>
+        </div>
+        
+        <div class="col-8 mt-5 mt-lg-0 m-auto col-lg-3 form-container">
+
+            <h2 class="text-center py-2">Get in touch</h2>
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                <input class="form-control" type="text" id="name" formControlName="name" placeholder="Your name">
+              
+                <input class="form-control" type="text" id="email" formControlName="email" placeholder="Your email">
+              
+                <input class="form-control" type="text" id="phone" formControlName="phone" placeholder="Your phone">
+              
+                <input class="form-control" hidden type="text" id="product_id" formControlName="product_id" placeholder="field 4">
+              
+                <textarea class="form-control" id="message" formControlName="message" placeholder="Your message"></textarea>
+              
+                <button class="form-control submit" type="submit">Submit</button>
+              </form>
+
+              
+        </div>
+
+    </div>
+
+</div>

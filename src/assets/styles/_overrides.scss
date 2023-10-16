@@ -1,0 +1,106 @@
+h1{
+    margin: 10px 0px !important;
+    line-height: 1 !important;
+    font:normal normal 900 4rem/62px Roboto !important;
+}
+
+
+.mat-mdc-tab-header{
+    margin: 36px auto;
+}
+@media (min-width: 991px) {
+    .mat-mdc-tab-header{
+        width: 50%;
+    }
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+    --mdc-tab-indicator-active-indicator-color: $primary-color !important;
+    --mat-tab-header-disabled-ripple-color: rgba(0, 0, 0, 0.38);
+    --mat-tab-header-pagination-icon-color: #000;
+    --mat-tab-header-inactive-label-text-color: rgba(0, 0, 0, 0.6);
+    --mat-tab-header-active-label-text-color: $primary-color !important;
+    --mat-tab-header-active-ripple-color: $primary-color !important;
+    --mat-tab-header-inactive-ripple-color: $primary-color !important;
+    --mat-tab-header-inactive-focus-label-text-color: rgba(0, 0, 0, 0.6);
+    --mat-tab-header-inactive-hover-label-text-color: rgba(0, 0, 0, 0.6);
+    --mat-tab-header-active-focus-label-text-color: $primary-color !important;
+    --mat-tab-header-active-hover-label-text-color: $primary-color !important;
+    --mat-tab-header-active-focus-indicator-color: $primary-color !important;
+    --mat-tab-header-active-hover-indicator-color: $primary-color !important;
+}
+
+
+  @media (max-width:768px){
+      .mat-mdc-tab-labels{
+    display: block!important;
+  }
+  }
+
+.slick-next{
+    right: calc( 100px) !important;
+    top: 3%!important;
+    transform: translate(0, 20%)!important;
+  }
+  .slick-prev{
+    top: 3%!important;
+    transform: translate(0, 20%)!important;
+    left: calc(100% - 200px)!important;
+    z-index: 100!important;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: $primary-color!important;
+    font-size: 57px !important;
+    opacity: 1!important;
+  }
+  .slick-prev,
+  .slick-next {
+    color: white!important;
+    padding: 10px 15px!important;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .slick-track{
+    margin-top: 100px;
+  }
+  .slick-prev {
+    margin-right: 10px;
+  }
+  
+  .slick-next {
+    margin-left: 10px;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #e58300;
+  }
+  
+//   .container {
+//     width: 80%;
+//     margin: auto;
+
+// }
+  // @media (max-width: 768px) {
+  //   .container {
+  //     width: 100%;
+  // }
+
+  // }
+  
+
+  input[type="text"]:focus ,
+  textarea:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: 0px 10px 20px #0000001A !important;
+  }

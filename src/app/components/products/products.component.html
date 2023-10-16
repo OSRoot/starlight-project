@@ -1,0 +1,41 @@
+<img class="main-cover" src="assets/lll.png" alt="">
+
+<div class="container my-5" >
+    <h1>Top Products</h1>
+
+    <div class="main-grid my-5">
+        <div class="list">
+
+            <ul class="px-4 py-3 filter">
+                <li>
+                    <form class="d-flex" (ngSubmit)="onSearchSubmit()">
+                        <button class="btn btn-primary" type="submit" class="search-icon">
+                          <i class="fa-solid fa-magnifying-glass p-1"></i>
+                        </button>
+                        <input class="form-control mx-1" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchTerm" name="yourInputName">
+                      </form>
+
+                    <hr>
+                </li>
+
+                <li>
+                    <mat-radio-group [(ngModel)]="selectedValue" (change)="onSelectionChange()">
+                        <mat-radio-button class="d-block" *ngFor="let cat of allProducts.categories" [value]="cat.id">
+                         <li class="filter">{{ cat.name }}</li> 
+                        </mat-radio-button>
+                      </mat-radio-group>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="sub-grid">
+            
+            <app-product-card *ngFor="let prod of allProducts.products" [data]="prod" ></app-product-card>
+
+
+        </div>
+    </div>
+
+
+</div>

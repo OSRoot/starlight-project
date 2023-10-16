@@ -1,0 +1,62 @@
+<div class="cover">
+    <div class="cover-content">
+      <h2 class="te">Welcome to Our Website</h2>
+      <p> {{home.header.desc}} </p>
+            <div class="button"><button class="cta-button" ><a routerLink="/about-us">Learn More </a><i class="fa-solid fa-chevron-right"></i></button></div>
+    </div>
+  </div>
+  
+
+  
+  <div class="container test_ " >
+    <h1>Top Products</h1>
+
+    <mat-tab-group>
+      
+      
+        <mat-tab *ngFor="let cat of home.categories_products" label="{{cat.name}}" >
+            <div class="card-row">
+                <app-product-card *ngFor="let prod of cat.products" [data]="prod" ></app-product-card>
+            </div>
+            
+        </mat-tab>
+
+      </mat-tab-group>
+  </div>
+
+  <div class="container test_" >
+    <div class="header-slider" ><h1>Other Categories</h1></div>
+    <ngx-slick-carousel class="carousel" 
+      #slickModal="slick-carousel" 
+      [config]="slideConfig">
+      
+    <div ngxSlickItem *ngFor="let slide of home.categories" class="slide">
+    <img style="cursor: pointer;" src="{{ slide.image_url}}" routerLink="/products" [queryParams]="{ id: slide.id}"  alt="" width="100%">
+    </div>
+    </ngx-slick-carousel>
+  </div>
+
+
+<div class="container test_ ">
+  <div class="header-container">
+    <h1>Latest Events</h1>
+    <button class="cta-button"><a routerLink="/events">Learn More </a> <i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+      <app-blog-card [data]="home.events"></app-blog-card>
+
+  </div>
+
+
+
+
+  <div class="contact-container xx">
+    <div class="overlay container">
+      <div>
+        <h1 class="d-block">Trusted Company our starLight </h1>
+        <p>keep the star light the first choise light the first choi</p>
+      </div>
+      
+      <button class="cta-button externalEdite"><a routerLink="/contact-us">Contact Us </a> <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>

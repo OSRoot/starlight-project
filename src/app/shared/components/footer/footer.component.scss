@@ -1,0 +1,124 @@
+@import '../../../../assets/styles/variables';
+@import "../../../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+
+  /* footer.component.scss */
+.footer {
+    background-image: url('../../../../assets/Bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 444px;
+    padding-top: 10px;
+
+    @media (min-width:768px){
+        padding-top: 150px;
+    }
+  }
+  
+
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    // margin: 120px auto;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    // flex: 0 0 25%;
+    // display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    max-width: 100%;
+    @media (max-width:768px){
+      background: white;
+      margin: 3rem 0;
+    }
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-left: 30px;
+  
+    
+    @media (min-width:768px){
+        flex: 0 0 50%;
+
+    }
+
+    @media(max-width: 600px){
+      display:block !important;
+      // color:black !important; 
+      padding:0px !important;
+      margin: 0px !important;
+    }
+  }
+
+
+  
+  @media (max-width: 1024px) {
+    .footer {
+      flex-direction: column;
+    }
+  
+    .column-3 {
+      width:90%;
+      margin-bottom: 10px; /* Add some space between stacked columns */
+    }
+  }
+  
+  .column-3 {
+    flex: 0 0 calc(20% - 30px);
+  }
+  
+  .footer h5 {
+    color: $background-color;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    margin: 30px 0px;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: $third-color;
+    text-decoration: none;
+  }
+
+  .footerItems { 
+display:  inline-block;
+padding: 10px;
+
+  }
+  
+  .copyRiiights{ 
+    margin: 0;
+    padding: 0;
+  background-color:#0e3f58 ;
+  max-height: 50px;
+  max-width: auto; 
+  text-align: center;
+  line-height: 50px;  
+  color: white;  
+  }
+
+  .footer_Image{
+    max-width: 20px;
+    max-height: 20;
+    // font-size: 10px;
+  }

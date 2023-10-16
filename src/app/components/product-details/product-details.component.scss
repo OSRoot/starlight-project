@@ -1,0 +1,50 @@
+.main-cover{
+    width: 100%;
+    max-height: 400px;
+}
+
+.form-control{
+    border: 1px solid #DDDFE7;
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem;
+    opacity: 0.7;
+    margin: 1rem 0;
+    width: 80%;
+    margin: 1rem auto;
+
+}
+.form-control:focus{
+    border: none!important;
+    outline: none!important; 
+       box-shadow: 0px 10px 20px #0000001A;
+
+}
+.imageInSideProudect{
+border-radius: 6px;
+
+}
+.form-container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+h2{
+    font: normal normal 300 31px/62px Roboto;
+    color: #0F358E;
+}
+ .cove h2{
+      font-size: 1000px;
+    }
+.submit {
+    background: transparent linear-gradient(180deg, #003049 0%, #1A4D67 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 20px 20px 60px #00000066;
+    border-radius: 38px;
+    opacity: 1;
+    color: white;
+}
+
+p{
+    font: normal normal normal 18px/42px Roboto;
+    letter-spacing: 0.66px;
+}

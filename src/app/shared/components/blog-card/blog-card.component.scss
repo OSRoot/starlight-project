@@ -1,0 +1,79 @@
+@import '../../../../assets/styles/variables';
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    justify-content: space-between; /* Distribute cards evenly along the row */
+  }
+  
+  
+  .card {
+    border-radius: 5px;
+    box-shadow: 20px 20px 60px #0000001A;
+    width: 47%;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none;
+  }
+
+  @media (max-width:768px){
+    .card{
+        width: 90%;
+    }
+  }
+  
+  .card-content{
+    margin: 40px;
+  }
+  .date{
+    text-align: end;
+ }
+
+.card-content h2{ 
+
+  color: #1A4D67;
+}
+
+
+  .card-type-1 {
+    /* Add custom styles for the first card */
+    background-color: white;
+    .date{
+      color: $accent-color;
+    }
+    h2{
+      color: blue;
+    }
+    p{
+      color: $accent-color;
+    }
+  }
+  
+  .card-type-2 {
+    /* Add custom styles for the second card */
+    background: transparent linear-gradient(180deg, #003049 0%, #1A4D67 100%) 0% 0% no-repeat padding-box;
+    color: white;
+    .date{
+      color: #709BE7;
+    }
+  }
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #709BE7 
+  }
+  
+  .card-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .card-image {
+    height: 150px;
+    width: 100%;
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,244 @@
+@import '../../../assets/styles/variables';
+
+
+.image-cover-container {
+  position: relative;
+  display: inline-block; /* or block, depending on your layout needs */
+}
+
+.main-cover {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: white;
+  h2{
+      font-size: 3vw; /* Use percentage-based font size */
+  }
+  h1{
+    font-size: 5vw !important; /* Use percentage-based font size */
+    padding: 0;
+  }
+}
+.image-cover-container .shortdes{ 
+font-size: 30px;
+line-height: 50px;
+}
+
+.image-text{
+
+  width: 70%;
+
+}
+@media (min-width: 767px) { 
+  .image-text {
+    top: 25%;
+    left: 10%;  
+  }
+
+   h2{
+padding-top: 2rem;
+  }
+}
+
+.container-fluid{
+    background-color: $primary-color;
+    color: white;
+
+}
+p{
+    font: normal normal normal 1.3rem/55px Roboto;
+    word-spacing:5px;
+}
+h1{
+    margin: 0px !important;
+    padding: 2rem 0;
+}
+
+
+
+.cover{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .image-container,.image-container1 ,.image-container2{
+    // position: relative;
+    max-width: 100%;
+    max-width: 90%;
+    margin: auto;
+    // margin-bottom: 5rem;
+        img {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+
+    }
+  }
+  
+
+  
+  .overflow-box {
+    // position: absolute;
+    // top: 30%;
+    // left: 50%;
+    padding: 20px;
+    background-color: $background-color;
+    color: $primary-color;
+    // width: fit-content;
+    max-height: 90%;
+    // max-height: fit-content;
+    max-width: 585px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: -20rem;
+    margin-left: 40%;
+    position: relative;
+    h2{
+        font: normal normal 900 1.5rem/40px Roboto;
+    }
+    p{
+        font: normal normal normal 1rem/27px Roboto;
+        // letter-spacing: 2.19px;
+    }
+  }
+  
+  .overflow-box p {
+    margin: 0;
+  }
+  
+
+
+
+  .image-container1{
+    // margin-bottom: 8rem;
+    img{
+        margin-left: 40%;
+    }
+    .overflow-box {
+        right: 50%;
+        left: 0;
+        top: 20%;
+
+        margin-left: 0;
+        margin-top: -20rem;
+    }
+  }
+
+  .image-container2{
+    // margin-bottom: 20rem;
+    // margin-top: 21rem;
+
+    img{
+        margin: auto;
+    }
+    .overflow-box {
+
+        margin-left: auto;
+        margin-top: -10rem;
+        margin-right: auto;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    .image-container,.image-container1 {
+        // margin-bottom: 6rem;          
+        img{
+        max-width: 90%;
+    }
+      }
+      .image-container2 {
+        // margin-bottom: 16em;  
+        // margin-top: 14rem;
+        img{
+        max-width: 90%;
+    }
+      }
+      .image-container .overflow-box {
+      left: 10%; /* Align to the left on smaller screens */
+      max-height: fit-content;    
+      margin-top: -5rem;
+      margin-left: 0;
+
+      
+    }
+    .image-container1 {
+        img{
+            margin-left: 10%;
+        }
+        .overflow-box {
+        right: 10%; /* Align to the left on smaller screens */
+        max-height: fit-content;    
+        margin-top: -4rem;
+      margin-left: 0;
+      }
+    }
+
+    .image-container2 {
+      img{
+        margin: auto;
+        }
+      .overflow-box {
+      max-height: fit-content;
+      max-width: 100%;
+      margin-top: -5rem;
+
+    }
+  }
+  }
+
+
+
+.add-dev{
+  padding: 7rem 0;
+}
+@media (max-width: 991px) {
+  .add-dev{
+    padding: 3rem 0;
+  }
+
+}
+
+
+hr{
+  margin: 10rem 0;
+  color: $background-color ;
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  hr{
+    margin: 2.2rem 0;
+  }
+  
+}
+
+.get-intouch {
+  font: normal normal normal 1rem/28px Roboto !important;
+  color: $accent-color;
+}
+.icon{
+  color: rgb($accent-color,0.6);
+  padding: 1rem 0;
+}
+
+
+.wrap{
+  overflow-wrap: anywhere;
+}

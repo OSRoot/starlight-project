@@ -1,0 +1,47 @@
+<img class="main-cover" src="assets/map.png" alt="">
+
+<div class="container-fluid ">
+<div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p class="get-intouch">Our team of designers, developers & strategists, make custom digital products for startups and brands.</p>
+        <div class="row m-2 ">
+            <div class="col-md-4 col-6" >
+                <i class="fa-regular fa-envelope icon"></i>
+                <div class="wrap">{{info.email}}</div>
+                <div class="icon">Email</div>
+            </div>
+
+            <div class="col-md-4 col-6">
+                <i class="fa-solid fa-mobile-screen-button icon"></i>
+                <div>{{info.phone}}</div>
+                <div class="icon">Phone</div>
+
+            </div>
+
+            <div class="col-md-4 ">
+                <i class="fa-solid fa-map-pin icon"></i>
+                <div>{{info.address}}</div>
+                <div class="icon">Adress</div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                <input class=" col-10 col-md-5 input" type="text" id="first_name" formControlName="first_name" placeholder="First name">
+              
+                <input class="col-10 col-md-5 input" type="text" id="second_name" formControlName="second_name" placeholder="Second name">
+              
+                <input class="col-10 col-md-5 input" type="text" id="email" formControlName="email" placeholder="Email">
+              
+                <input class="col-10 col-md-5 input" type="text" id="phone" formControlName="phone" placeholder="Phone">
+              
+                <textarea class="col-10 mx-0 input" style="width: 88%;" id="message" rows="7" formControlName="message" placeholder="Message"></textarea>
+              
+                <button class="form-control submit" type="submit">Send message</button>
+              </form>
+
+        </div>
+</div>
+</div>

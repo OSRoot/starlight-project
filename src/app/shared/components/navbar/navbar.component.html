@@ -1,0 +1,16 @@
+
+  <nav class="navbar">
+    <img src="assets/logo.png" alt="Logo" class="navbar-logo">
+    <ul [class.show]="isMenuOpen">
+      <li *ngFor="let item of navbarItems" [class.active]="item.active">
+        <a [routerLink]="[item.link]" (click)="setActive(item)">{{ item.label }}</a>
+      </li>
+    </ul>
+    <div></div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  
